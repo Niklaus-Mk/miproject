@@ -7,9 +7,14 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class UserController {
     
-    @GetMapping("/admin/upload-product")
+    @GetMapping("subirProducto")
     public ModelAndView newProduct(){
-        ModelAndView modelView = new ModelAndView("admin/uploadProduct");
+        ModelAndView modelView = new ModelAndView("subirProducto");
         return modelView;
+    }
+
+    @GetMapping("/admin/new-product")
+    public String uploadProduct(){
+        return "admin/uploadProduct";
     }
 }

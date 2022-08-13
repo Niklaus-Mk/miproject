@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class ApplicationController {
 
-    @GetMapping("/")
+    @GetMapping("/home")
     public String getIndex(){
-        return "index";
+        return "home";
     }
 
     @GetMapping("/about-us")
